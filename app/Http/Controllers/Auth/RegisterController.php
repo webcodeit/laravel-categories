@@ -63,10 +63,14 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        return redirect(RouteServiceProvider::HOME);
+
+        // return redirect()->route('product.index')->with('success', 'Product created successfully!');
     }
 }

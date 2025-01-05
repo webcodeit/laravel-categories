@@ -78,7 +78,7 @@ class ProductController extends Controller
 
             // Attach categories to the product
             $product->categories()->sync($request->categories);
-
+  
             return redirect()->route('product.index')->with('success', 'Product created successfully!');
     }
 

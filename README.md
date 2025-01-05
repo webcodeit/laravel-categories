@@ -17,3 +17,9 @@ php artisan db:seed --class=CategoryTableSeeder
 
 1) php artisan make:model Post -mcr
     this comand use create Post modal,  post migrate table file , Porstcontroller resource  
+
+
+
+
+
+
